@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test case 1</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+  <script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";e.async=true;e.src="https://d7p9czrvs14ne.cloudfront.net/24/eum/rum-staging.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrf2","staging-beacon-1.newrelic.com","5adff8aba2",10099,"d1tfTUNXWlpTExtGF1lHHkpZV0E=",0,13,new Date().getTime()])</script>
+
+  <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+  <script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";e.async=true;e.src="https://d7p9czrvs14ne.cloudfront.net/24/eum/rum-staging.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrf2","staging-beacon-1.newrelic.com","5adff8aba2",10099,"d1tfTUNXWlpTExtGF1lHHkpZV0E=",0,13,new Date().getTime()])</script>
+
+</head>
+<body>
+  <h1> Taste Light Rum  </h1>
+  <p> Light Rum also referred to Silver or White Rum</p>
+
+<%= render 'layouts/header_testcase_1'%>
+
+<%= yield %>
+
+<%= render 'layouts/footer_testcase_1'%>
+<%= NewRelic::Agent.browser_timing_footer rescue "" %>
+
+</body>
+</html>

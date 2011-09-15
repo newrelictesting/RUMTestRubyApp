@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+    function display(Image_Id) {
+    document.getElementById(Image_Id).style.display="inline";
+    }
+    </script>
+  <title>RUMTestRubyApp</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <h1> Taste Custom Made Rum </h1>
+
+<%= render 'layouts/header_testcase_9'%>
+
+<%= yield %>
+
+<%= render 'layouts/footer_testcase_9'%>
+
+<a href="#" onclick="display('myImage')">Click here to see the rum image!!!</a>
+
+<%= image_tag  'custommaderum.jpeg', :alt => 'custommaderum', :style => 'display:none', :id => 'myImage', :border => '0' %>
+
+</body>
+</html>

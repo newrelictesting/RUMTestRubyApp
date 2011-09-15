@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test case 10</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <h1> You got no RUM  </h1>
+  <p> We don't instrument this page '</p>
+
+<%= render 'layouts/header_testcase_10'%>
+
+<%= yield %>
+
+<%= render 'layouts/footer_testcase_10'%>
+</body>
+
+</body>
+</html>

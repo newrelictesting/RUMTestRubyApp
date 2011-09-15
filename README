@@ -1,0 +1,15 @@
+Updated by Mei Xue 9/15/2011
+
+Version 1
+
+
+The RUM cross browser tests are useful regression tests that you can run in the following two situation to make sure that our changes don't hang any customers' web page in all the support browsers:
+- when there are changes to rum.js
+- when there are changes to agents that related to rum support.
+
+There are two sets of tests right now with a Java test app and a Ruby test app. The tests cases implemented in the test applications include:
+- Manual instrument RUM by placing the NR rum api call in different places in the header and footer of the web pages ( from different layout files in Ruby)
+- Play with different meta tags in the web pages or layout files
+- Play with different character encoding in the web pages or layout files
+- In purpose to have duplicate NR rum api calls
+- In purpose to have duplicate NR JS script injection ( this is to test for regression test a rum crash bug: https://www.pivotaltracker.com/projects/5640)

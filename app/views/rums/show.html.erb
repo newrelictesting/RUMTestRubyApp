@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @rum.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @rum.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_rum_path(@rum) %> |
+<%= link_to 'Back', rums_path %>

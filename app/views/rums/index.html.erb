@@ -1,0 +1,23 @@
+<h1>Welcome to Rum Taste Ruby Web</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rums.each do |rum| %>
+  <tr>
+    <td><%= rum.name %></td>
+    <td><%= rum.price %></td>
+    <td><%= link_to rum.name, rum %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rum', new_rum_path %>
